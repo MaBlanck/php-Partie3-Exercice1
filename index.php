@@ -13,12 +13,13 @@ $number = 0;
 <body>
     <h1>Exercice 1 Partie 3</h1>
 
-    <p><?php 
-    while ($number <= 10)
-    {
-        echo $number;
-        $number++;
-    }
-    ?></p>
+    <ul><?php 
+    while ($number <= 10):?>
+    
+        <li><?= $number; ?></li>
+        <?php $number++;
+        endwhile;
+    ?>
+    </ul>
 </body>
 </html>
